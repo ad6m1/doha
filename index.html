@@ -33,7 +33,6 @@
       position: relative;
     }
 
-    /* Animated Tech Background */
     .tech-bg {
       position: fixed;
       inset: 0;
@@ -44,7 +43,6 @@
       z-index: 0;
     }
 
-    /* Grid Lines */
     .grid-lines {
       position: fixed;
       inset: 0;
@@ -61,7 +59,6 @@
       100% { transform: translate(50px, 50px); }
     }
 
-    /* Floating Particles */
     .particle {
       position: absolute;
       width: 2px;
@@ -91,7 +88,6 @@
     .particle:nth-child(4) { top: 70%; left: 70%; animation-delay: 6s; }
     .particle:nth-child(5) { top: 85%; left: 90%; animation-delay: 8s; }
 
-    /* Container */
     .container {
       position: relative;
       z-index: 1;
@@ -102,7 +98,6 @@
       padding: 20px;
     }
 
-    /* Login Card */
     .login-wrapper {
       max-width: 480px;
       width: 100%;
@@ -133,7 +128,6 @@
       }
     }
 
-    /* Card Glow Effect */
     .card::before {
       content: '';
       position: absolute;
@@ -162,7 +156,6 @@
       z-index: 1;
     }
 
-    /* AI Logo */
     .ai-logo {
       text-align: center;
       margin-bottom: 40px;
@@ -243,7 +236,6 @@
       line-height: 1.7;
     }
 
-    /* Disclaimer Link */
     .disclaimer-link {
       text-align: center;
       margin: 20px 0;
@@ -264,7 +256,6 @@
       text-shadow: 0 0 10px var(--glow);
     }
 
-    /* Info Alert */
     .info-alert {
       background: rgba(0, 245, 255, 0.1);
       border: 1px solid rgba(0, 245, 255, 0.3);
@@ -280,7 +271,6 @@
       margin-left: 8px;
     }
 
-    /* Form */
     .form-group {
       margin-bottom: 25px;
     }
@@ -366,7 +356,6 @@
       color: var(--text-muted);
     }
 
-    /* Remember Me */
     .remember {
       display: flex;
       align-items: center;
@@ -392,7 +381,6 @@
       font-weight: 400;
     }
 
-    /* Button */
     .btn {
       width: 100%;
       padding: 18px;
@@ -453,7 +441,6 @@
       gap: 10px;
     }
 
-    /* Tech Decorations */
     .tech-corner {
       position: absolute;
       width: 60px;
@@ -477,7 +464,6 @@
       border-bottom-left-radius: 10px;
     }
 
-    /* App Page Styles */
     .app-card {
       background: rgba(10, 14, 39, 0.7);
       backdrop-filter: blur(20px);
@@ -509,7 +495,6 @@
       font-size: 14px;
     }
 
-    /* Connect Button */
     .btn-connect {
       background: linear-gradient(135deg, #10b981, #059669);
       color: white;
@@ -522,7 +507,6 @@
       box-shadow: 0 15px 40px rgba(16, 185, 129, 0.4);
     }
 
-    /* Navigation */
     .nav {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -548,7 +532,6 @@
       border: none;
     }
 
-    /* Form Inputs for App Page */
     input[type="file"],
     select,
     textarea {
@@ -570,7 +553,6 @@
       resize: vertical;
     }
 
-    /* Schedule Toggle */
     .schedule-toggle {
       display: flex;
       align-items: center;
@@ -643,7 +625,6 @@
       font-size: 18px;
     }
 
-    /* DateTime Picker */
     input[type="datetime-local"] {
       width: 100%;
       padding: 16px;
@@ -706,7 +687,6 @@
       box-shadow: 0 0 20px rgba(0, 245, 255, 0.2);
     }
 
-    /* Status Messages */
     .status {
       text-align: center;
       margin-top: 20px;
@@ -734,7 +714,6 @@
       border: 1px solid rgba(0, 245, 255, 0.3);
     }
 
-    /* Loading Dots */
     .dots span {
       animation: blink 1.4s infinite both;
     }
@@ -747,7 +726,6 @@
       20% { opacity: 1; }
     }
 
-    /* Modal */
     .modal {
       position: fixed;
       inset: 0;
@@ -811,18 +789,15 @@
       padding-right: 20px;
     }
 
-    /* Other Buttons */
     .btn-instagram {
       background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
       margin-top: 15px;
     }
 
-    /* Utility */
     .hidden {
       display: none !important;
     }
 
-    /* Stats Cards */
     .stats-cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -874,7 +849,6 @@
       margin-top: 5px;
     }
 
-    /* Post Item */
     .post-item {
       background: rgba(10, 14, 39, 0.5);
       border: 1px solid rgba(0, 245, 255, 0.1);
@@ -955,7 +929,6 @@
       color: #ef4444;
     }
 
-    /* Responsive */
     @media (max-width: 500px) {
       .card,
       .app-card {
@@ -985,11 +958,9 @@
   </style>
 </head>
 <body>
-  <!-- Tech Background -->
   <div class="tech-bg"></div>
   <div class="grid-lines"></div>
   
-  <!-- Floating Particles -->
   <div class="particle"></div>
   <div class="particle"></div>
   <div class="particle"></div>
@@ -997,7 +968,6 @@
   <div class="particle"></div>
 
   <div class="container">
-    <!-- LOGIN PAGE -->
     <div class="login-wrapper" id="loginPage">
       <div class="card">
         <div class="tech-corner top-left"></div>
@@ -1067,7 +1037,6 @@
       </div>
     </div>
 
-    <!-- APP PAGE -->
     <div class="hidden" id="appPage">
       <div class="app-card">
         <div class="app-header">
@@ -1075,7 +1044,6 @@
           <p>إدارة ونشر المحتوى بذكاء اصطناعي</p>
         </div>
 
-        <!-- Connect Button -->
         <a href="https://app.upload-post.com/connect?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJyaG0ud29yazFAZ21haWwuY29tIiwicHJvZmlsZV91c2VybmFtZSI6ImRvaGF0aWt0b2siLCJleHAiOjE3Nzc5ODMwNzcsImlhdCI6MTc3NzgxMDI3N30.gsrA5ZshTrdNgTrkHs2bAOielp2O8KUKEkBLWc4lDh8">
           <button class="btn btn-connect">
             <span>
@@ -1085,7 +1053,6 @@
           </button>
         </a>
 
-        <!-- Navigation -->
         <div class="nav">
           <button class="btn" onclick="go('publish')">
             <span><i class="fas fa-upload"></i> النشر</span>
@@ -1098,7 +1065,6 @@
           </button>
         </div>
 
-        <!-- PUBLISH PAGE -->
         <div id="publishPage">
           <div class="form-group">
             <label>
@@ -1121,7 +1087,6 @@
             </select>
           </div>
 
-          <!-- Schedule Toggle -->
           <div class="form-group">
             <div class="schedule-toggle">
               <input type="checkbox" id="scheduleToggle" onchange="toggleSchedule()">
@@ -1132,7 +1097,6 @@
             </div>
           </div>
 
-          <!-- Schedule DateTime Picker -->
           <div class="form-group hidden" id="scheduleGroup">
             <label>
               <i class="fas fa-calendar-alt"></i>
@@ -1172,7 +1136,6 @@
           </a>
         </div>
 
-        <!-- HISTORY PAGE -->
         <div id="historyPage" class="hidden">
           <div class="stats-cards" style="margin-bottom: 30px;">
             <div class="stat-card">
@@ -1198,7 +1161,6 @@
             </div>
           </div>
 
-          <!-- Tabs -->
           <div class="nav" style="margin-bottom: 20px;">
             <button class="btn" id="tab-scheduled" onclick="switchTab('scheduled')" style="background: linear-gradient(135deg, var(--primary), var(--secondary)); border: none;">
               <span><i class="fas fa-clock"></i> المجدول</span>
@@ -1211,14 +1173,12 @@
             </button>
           </div>
 
-          <!-- Posts List -->
           <div id="postsListContainer" style="margin-top: 20px;"></div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- DISCLAIMER MODAL -->
   <div class="modal" id="disclaimer">
     <div class="modal-content">
       <h2>
@@ -1241,16 +1201,11 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.3/dist/umd/supabase.js"></script>
   <script>
-    // ========================================
-    // 🔧 Supabase Configuration
-    // ========================================
     const SUPABASE_URL = 'https://sljhtwxwdluraptvsngr.supabase.co';
     const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNsamh0d3h3ZGx1cmFwdHZzbmdyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA1NjIwMzEsImV4cCI6MjA4NjEzODAzMX0.nI4Qbfwhyuxg_FCwiZz-bnCpBvBqt7PgpuJD-wRUwJA';
     
-    // Initialize Supabase Client
     let supabase;
     
-    // Wait for Supabase library to load
     window.addEventListener('DOMContentLoaded', () => {
       try {
         const { createClient } = window.supabase;
@@ -1261,7 +1216,6 @@
       }
     });
     
-    // SHA-256 Hash Function
     async function sha256(message) {
       const msgBuffer = new TextEncoder().encode(message);
       const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
@@ -1270,70 +1224,41 @@
       return hashHex;
     }
 
-    // 🔐 SHARED DATABASE KEY
-    const USERS_DB_KEY = 'aiCreatorUsers_v2';
-
-    // Get users from shared database
-    function getUsers() {
-      const users = localStorage.getItem(USERS_DB_KEY);
-      if (!users) {
-        const defaultUsers = {
-          "controller@ahmedmarketing.cloud": {
-            name: "المالك الرئيسي",
-            codeHash: "9bfdca9597bac776ccdd7ce3b569469ad4ae3ac72a3948e1ebb6738aad736359",
-            role: "admin",
-            status: "active",
-            tempAccess: null,
-            createdAt: new Date().toISOString()
-          },
-          "ali@ahmedmarketing.cloud": {
-            name: "علي محمد",
-            codeHash: "d5083e34522626dd10e151c78c1ba502a3d67427b752c3fd43bd3b944072d1e7",
-            role: "user",
-            status: "active",
-            tempAccess: null,
-            createdAt: new Date().toISOString()
-          },
-          "sara@ahmedmarketing.cloud": {
-            name: "سارة أحمد",
-            codeHash: "b37278ee8ab915320c34334f2ed80013983a0e978aae1cbcce64950f055d6da4",
-            role: "user",
-            status: "active",
-            tempAccess: null,
-            createdAt: new Date().toISOString()
-          },
-          "ahmed@ahmedmarketing.cloud": {
-            name: "أحمد حسن",
-            codeHash: "ab32c2ecea6ea1b099c1fe7744c0405c2171b4114e80e3adb52bd19c912371e0",
-            role: "user",
-            status: "active",
-            tempAccess: null,
-            createdAt: new Date().toISOString()
-          },
-          "admin@ahmedmarketing.cloud": {
-            name: "mkd",
-            codeHash: "21817c78a3ba029c98dfa049d5edc500cda26d00d3a2c6b47cc6e7062a689ef0",
-            role: "user",
-            status: "active",
-            tempAccess: null,
-            createdAt: new Date().toISOString()
-          },
-          "doha@ahmedmarketing.cloud": {
-            name: "doha",
-            codeHash: "d5a65b667f26c7f176a211510a8f6ba639c371b7979ea258d289fd1604ae6c28",
-            role: "user",
-            status: "active",
-            tempAccess: null,
-            createdAt: new Date().toISOString()
-          }
-        };
-        localStorage.setItem(USERS_DB_KEY, JSON.stringify(defaultUsers));
-        return defaultUsers;
+    // ✅ UPDATED: Get users from Supabase instead of localStorage
+    async function getUsers() {
+      try {
+        console.log('📡 Fetching users from Supabase...');
+        
+        const { data, error } = await supabase
+          .from('users')
+          .select('*');
+        
+        if (error) {
+          console.error('❌ Error fetching users:', error);
+          return {};
+        }
+        
+        console.log('✅ Users fetched:', data);
+        
+        const usersObj = {};
+        data.forEach(user => {
+          usersObj[user.email] = {
+            name: user.name,
+            codeHash: user.code_hash,
+            role: user.role,
+            status: user.status,
+            tempAccess: user.temp_access,
+            createdAt: user.created_at
+          };
+        });
+        
+        return usersObj;
+      } catch (error) {
+        console.error('❌ Supabase error:', error);
+        return {};
       }
-      return JSON.parse(users);
     }
 
-    // Check temporary access validity
     function checkTempAccess(user) {
       if (!user.tempAccess) {
         return { valid: true, expired: false };
@@ -1365,7 +1290,6 @@
     let currentUserEmail = "";
     let currentUserRole = "";
 
-    // Toggle Password Visibility
     function togglePasswordVisibility() {
       const codeInput = document.getElementById('codeInput');
       const toggleIcon = document.getElementById('togglePassword');
@@ -1381,7 +1305,6 @@
       }
     }
 
-    // Save Login Data
     function saveLoginData(email, code) {
       const expiryDate = new Date();
       expiryDate.setDate(expiryDate.getDate() + 30);
@@ -1391,14 +1314,12 @@
       localStorage.setItem("saveExpiry", expiryDate.getTime());
     }
 
-    // Clear Login Data
     function clearLoginData() {
       localStorage.removeItem("savedEmail");
       localStorage.removeItem("savedCode");
       localStorage.removeItem("saveExpiry");
     }
 
-    // Load Saved Login
     function loadSavedLogin() {
       const savedEmail = localStorage.getItem("savedEmail");
       const savedCode = localStorage.getItem("savedCode");
@@ -1416,49 +1337,57 @@
       document.getElementById('rememberMe').checked = true;
     }
 
-    // Login Function - WITH ENCRYPTION AND TEMP ACCESS CHECK
+    // ✅ UPDATED: Login function now uses await getUsers()
     async function login(event) {
       event.preventDefault();
       
       const email = document.getElementById('emailInput').value.trim().toLowerCase();
       const code = document.getElementById('codeInput').value.trim();
 
-      // Get users from shared database
-      const users = getUsers();
+      console.log('🔐 Attempting login for:', email);
 
-      // Check if email exists
+      // ✅ Get users from Supabase
+      const users = await getUsers();
+      
+      console.log('👥 Users loaded:', Object.keys(users));
+
       if (!users[email]) {
+        console.error('❌ Email not found:', email);
         alert("❌ بيانات الدخول غير صحيحة");
         return;
       }
 
-      // Hash the entered code and compare
       const enteredCodeHash = await sha256(code);
       
+      console.log('🔑 Hash comparison:', {
+        entered: enteredCodeHash,
+        stored: users[email].codeHash,
+        match: users[email].codeHash === enteredCodeHash
+      });
+      
       if (users[email].codeHash !== enteredCodeHash) {
+        console.error('❌ Password mismatch');
         alert("❌ بيانات الدخول غير صحيحة");
         return;
       }
 
-      // ✅ Check if account is disabled
       if (users[email].status === 'disabled') {
+        console.error('❌ Account disabled');
         alert("❌ هذا الحساب معطل. تواصل مع المدير");
         return;
       }
 
-      // ✅ Check temporary access
       const tempAccessInfo = checkTempAccess(users[email]);
       if (!tempAccessInfo.valid && tempAccessInfo.expired) {
+        console.error('❌ Temporary access expired');
         alert("❌ انتهت صلاحية حسابك. تواصل مع المدير لتجديد الصلاحية");
         return;
       }
 
-      // ⚠️ Show warning if access is expiring soon (3 days or less)
       if (tempAccessInfo.valid && tempAccessInfo.daysRemaining && tempAccessInfo.daysRemaining <= 3) {
         alert(`⚠️ تنبيه: صلاحية حسابك ستنتهي خلال ${tempAccessInfo.daysRemaining} ${tempAccessInfo.daysRemaining === 1 ? 'يوم' : 'أيام'}`);
       }
 
-      // Save login data if remember me is checked
       if (document.getElementById('rememberMe').checked) {
         saveLoginData(email, code);
       } else {
@@ -1467,22 +1396,18 @@
 
       currentUserEmail = email;
       currentUserRole = users[email].role;
-      console.log('✅ Logged in as:', currentUserEmail, '| Role:', currentUserRole);
+      console.log('✅ Logged in successfully as:', currentUserEmail, '| Role:', currentUserRole);
       
-      // Log temp access info
       if (users[email].tempAccess) {
         console.log('⏰ Temp Access:', tempAccessInfo);
       }
       
-      // Hide login page and show app page
       document.getElementById('loginPage').classList.add('hidden');
       document.getElementById('appPage').classList.remove('hidden');
       
-      // Show publish page by default
       go('publish');
     }
 
-    // Logout
     function logout() {
       clearLoginData();
       currentUserEmail = "";
@@ -1491,7 +1416,6 @@
       document.getElementById('loginPage').classList.remove('hidden');
     }
 
-    // Navigate between pages
     function go(page) {
       document.getElementById('publishPage').classList.add('hidden');
       document.getElementById('historyPage').classList.add('hidden');
@@ -1504,10 +1428,6 @@
       }
     }
 
-    // ========================================
-    // 📊 History Page Functions - WITH USER FILTERING ✅
-    // ========================================
-    
     let currentTab = 'scheduled';
     
     async function loadHistory() {
@@ -1523,7 +1443,6 @@
       try {
         console.log('📊 Loading stats for user:', currentUserEmail);
         
-        // ✅ Get scheduled posts count - FILTERED BY USER
         const { data: scheduledData, error: scheduledError } = await supabase
           .from('scheduled_posts')
           .select('*', { count: 'exact' })
@@ -1534,7 +1453,6 @@
           console.error('Scheduled error:', scheduledError);
         }
         
-        // ✅ Get published posts count - FILTERED BY USER
         const { data: publishedData, error: publishedError } = await supabase
           .from('published_posts')
           .select('*', { count: 'exact' })
@@ -1544,7 +1462,6 @@
           console.error('Published error:', publishedError);
         }
         
-        // ✅ Get failed posts count - FILTERED BY USER
         const { data: failedData, error: failedError } = await supabase
           .from('scheduled_posts')
           .select('*', { count: 'exact' })
@@ -1581,7 +1498,6 @@
         let posts = [];
         
         if (tab === 'scheduled') {
-          // ✅ FILTERED BY USER
           const { data, error } = await supabase
             .from('scheduled_posts')
             .select('*')
@@ -1597,7 +1513,6 @@
           console.log('✅ Scheduled posts loaded:', posts.length);
           
         } else if (tab === 'published') {
-          // ✅ FILTERED BY USER
           const { data, error } = await supabase
             .from('published_posts')
             .select('*')
@@ -1612,7 +1527,6 @@
           console.log('✅ Published posts loaded:', posts.length);
           
         } else if (tab === 'failed') {
-          // ✅ FILTERED BY USER
           const { data, error } = await supabase
             .from('scheduled_posts')
             .select('*')
@@ -1724,7 +1638,6 @@
       console.log('🗑️ Deleting post:', id, 'for user:', currentUserEmail);
       
       try {
-        // ✅ Delete only if it belongs to current user - SECURITY
         const { error } = await supabase
           .from('scheduled_posts')
           .delete()
@@ -1743,7 +1656,6 @@
       }
     }
 
-    // Toggle Caption
     function toggleCaption() {
       const postType = document.getElementById('postType').value;
       const captionGroup = document.getElementById('captionGroup');
@@ -1755,7 +1667,6 @@
       }
     }
 
-    // Toggle Schedule - BAGHDAD TIMEZONE (GMT+3)
     function toggleSchedule() {
       const scheduleToggle = document.getElementById('scheduleToggle');
       const scheduleGroup = document.getElementById('scheduleGroup');
@@ -1791,7 +1702,6 @@
       }
     }
 
-    // Publish - WITH SUPABASE STORAGE
     async function publish() {
       const mediaInput = document.getElementById('mediaInput');
       const postType = document.getElementById('postType');
@@ -1995,7 +1905,6 @@
       }
     }
 
-    // Modal Functions
     function openDisclaimer() {
       document.getElementById('disclaimer').style.display = 'flex';
     }
